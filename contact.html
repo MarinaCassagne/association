@@ -6,14 +6,62 @@
     <title>Contact</title>
   </head>
   <body>
-    <!-- Page contact : Formulaire HTML -->
-    <form method="post">
-      <p>
-        <label>
-          Prénom :
-          <input id="prénom" name="firstName" type="text" required />
-        </label>
-      </p>
-    </form>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="activities.html">Activités</a></li>
+          <li><a href="news.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Page contact : Formulaire HTML -->
+      <h1>CONTACTEZ-NOUS</h1>
+    </header>
+    <main>
+      <form>
+        <p>
+          <label>
+            Prénom :
+            <input id="firstname" name="firstname" type="text" required />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Nom :
+            <input id="lastname" name="lastname" type="text" required />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Téléphone :
+            <input id="Téléphone" name="Phone" type="tel" required />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            E-mail :
+            <input id="E-mail" name="e-mail" type="email" required />
+          </label>
+        </p>
+
+        <p>
+          <label for="object">Objet :</label>
+
+          <textarea id="object" name="object" rows="5" cols="33">
+Mentionner l'objet de votre demande</textarea
+          >
+        </p>
+
+        <p>
+          <label for="message">Message :</label>
+
+          <textarea id="message" name="message" rows="5" cols="33"></textarea>
+        </p>
+      </form>
+    </main>
   </body>
 </html>
