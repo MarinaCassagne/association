@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.slogan {
+  margin: 30px;
+  text-shadow: 0 0 0 blue;
+}
+
+main {
+  display: grid;
+}
+
+footer {
+  margin: 15 0;
+}
