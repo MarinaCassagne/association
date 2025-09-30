@@ -4,11 +4,21 @@
 }
 
 html {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.918);
   font-family: "Segoe UI", sans-serif;
 }
 
+body {
+  margin: 0 auto;
+  padding: 15px;
+  display: block;
+}
+
 header {
-  margin-bottom: 50px;
+  margin-bottom: 0 auto 50px auto;
+  padding: 25px;
+  box-shadow: 0 0 0 black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -21,12 +31,27 @@ header {
   grid-area: lo;
   width: 100%;
   height: auto;
+  margin: 15px;
 }
 
 h1 {
+  text-transform: uppercase;
   grid-area: h1;
   margin: 25px;
   text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin: 15px 0 5px 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+img {
+  margin: 15px 0;
 }
 
 ul {
@@ -52,28 +77,31 @@ nav ul li {
 }
 
 a {
-  color: #f0f9ff;
+  color: rgba(255, 255, 255, 0.918);
   text-decoration: none;
 }
 
 .slogan {
+  text-transform: uppercase;
   margin: 30px;
   text-shadow: 0 0 0 blue;
-}
-
-body {
-  margin: 0 auto;
-  padding: 15px;
 }
 
 main {
   display: grid;
 }
 
+/* Footer */
+
 footer {
-  color: #f0f9ff;
+  color: rgba(255, 255, 255, 0.918);
   background-color: #212529;
-  margin: 100px 0;
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+
+footer h2 {
+  padding: 15px;
 }
 
 .socialNetwork {
@@ -90,32 +118,71 @@ footer {
   margin: 5px;
 }
 
+.address {
+  display: flex;
+  justify-content: space-between;
+  text-align: centre;
+  width: 40%;
+  margin: 20px auto;
+}
+
+.adress ul {
+  margin: 0 50px;
+}
+
+.legalNotices {
+  padding: 15px;
+}
+
 /* Contact */
 
+form {
+  margin: 0 auto;
+  text-align: center;
+}
+
 label {
+  font-weight: bold;
   color: rgb(144, 17, 22);
-  margin-bottom: 5px;
 }
 
 input {
   width: auto;
   padding: 10px;
-  margin-bottom: 15px;
+  margin: 5px 0 15px 0;
   border-width: 1px;
   border-radius: 15px;
 }
 
 textarea {
+  margin: 5px 0 15px 0;
   padding: 10px;
   border-width: 1px;
   border-radius: 15px;
 }
 
 #envoyer {
-  color: #f0f9ff;
-  box-shadow: 0 5 0 black;
-  border-color: #f0f9ff;
+  color: rgba(255, 255, 255, 0.918);
+  box-shadow: 0 5 0 rgb(144, 19, 24);
+  border-color: #fff8;
   border-width: 1px;
   border-radius: 15px;
-  background-color: rgb(33, 37, 41);
+  background-color: rgb(144, 19, 24);
+}
+
+/* News */
+
+article {
+  width: 80%;
+  background-color: rgb(214, 181, 136, 0.5);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px auto;
+  box-shadow: 0 15 0 black;
+}
+
+article img {
+  height: 300px;
+  margin: 15px 0;
+  padding: 2px;
 }
