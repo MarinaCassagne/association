@@ -6,7 +6,8 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-   <header>
+  <body>
+    <header>
       <img src="img/logoEscalagou.png" alt="logo Escalagou" width="30" />
 
       <h1>Contactez-nous</h1>
@@ -19,52 +20,69 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      
     </header>
     <main>
       <form>
         <p>
-          <label>
-            Prénom :
-            <input id="firstname" name="firstname" type="text" required />
-          </label>
+          <label for="firstname">Prénom :</label>
+          <br />
+          <input id="firstname" name="firstname" type="text" required />
         </p>
 
         <p>
-          <label>
-            Nom :
-            <input id="lastname" name="lastname" type="text" required />
-          </label>
+          <label for="lastname">Nom :</label>
+          <br />
+          <input id="lastname" name="lastname" type="text" required />
         </p>
 
         <p>
-          <label>
-            Téléphone :
-            <input id="Téléphone" name="Phone" type="tel" placeholder="votre numéro de téléphone" />
-          </label>
+          <label for="phone">Téléphone :</label>
+          <br />
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="votre numéro de téléphone"
+          />
         </p>
 
         <p>
-          <label>
-            E-mail :
-            <input id="E-mail" name="e-mail" type="email" placeholder="votre e-mail" />
-          </label>
+          <label for="e-mail">E-mail :</label>
+          <br>
+          <input
+            id="e-mail"
+            name="e-mail"
+            type="email"
+            placeholder="votre e-mail"
+          />
         </p>
 
         <p>
-          <label>
-          Objet de votre message :  
-          <input id="object" name="object" type="text" placeholder="objet ou sujet de votre message" required />
+          <label for="object">Objet de votre message :</label>
+          <br>
+            <input
+              id="object"
+              name="object"
+              type="text"
+              placeholder="objet ou sujet de votre message"
+              required
+            />
           </label>
         </p>
 
         <p>
           <label for="message">Message :</label>
-          <textarea id="message" name="message" rows="5" cols="33" placeholder="votre message"></textarea>
+          <br>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="33"
+            placeholder="votre message"
+          ></textarea>
         </p>
 
-        <input type="submit" value="Envoyer" />
-
+        <input id="envoyer" type="submit" value="Envoyer" />
       </form>
     </main>
 
