@@ -9,12 +9,6 @@
    <header>
       <img src="img/logoEscalagou.png" alt="logo Escalagou" width="30" />
 
-      <img
-        src="img/salleEscalagou.jpg"
-        alt="salle d'escalade Escalagou"
-        width="100"
-      />
-
       <h1>Contactez-nous</h1>
 
       <nav>
@@ -46,35 +40,38 @@
         <p>
           <label>
             Téléphone :
-            <input id="Téléphone" name="Phone" type="tel" required />
+            <input id="Téléphone" name="Phone" type="tel" placeholder="votre numéro de téléphone" />
           </label>
         </p>
 
         <p>
           <label>
             E-mail :
-            <input id="E-mail" name="e-mail" type="email" required />
+            <input id="E-mail" name="e-mail" type="email" placeholder="votre e-mail" />
           </label>
         </p>
 
         <p>
-          <label for="object">Objet :</label>
-
-          <textarea id="object" name="object" rows="5" cols="33">
-Mentionner l'objet de votre demande</textarea
-          >
+          <label>
+          Objet de votre message :  
+          <input id="object" name="object" type="text" placeholder="objet ou sujet de votre message" required />
+          </label>
         </p>
 
         <p>
           <label for="message">Message :</label>
-
-          <textarea id="message" name="message" rows="5" cols="33"></textarea>
+          <textarea id="message" name="message" rows="5" cols="33" placeholder="votre message"></textarea>
         </p>
+
+        <input type="submit" value="Envoyer" />
+
       </form>
     </main>
 
-   <footer>
-           <ul>
+    <footer>
+      <!-- Réseaux sociaux -->
+      <h2>Suivez-nous</h2>
+      <ul class="socialNetwork">
         <li>
           <img src="icone/facebook.png" alt="icone Facebook" width="30" /><a
             href="https://www.facebook.com/https://www.facebook.com/escalagou/?locale=fr_FR"
@@ -90,11 +87,29 @@ Mentionner l'objet de votre demande</textarea
         </li>
       </ul>
 
-      <p>Club d'escalade Escalagou</p>
-      <p>Adresse : D609, 34800 Nébian</p>
+      <!-- Adresses -->
+      <section class="adressEscalagou">
+        <ul>
+          <li><b>Club d'escalade Escalagou</b></li>
+          <li>Cave coopérative de Nébian</li>
+          <li>Av. Marcellin Albert</li>
+          <li>34800 Nébian</li>
+        </ul>
+
+        <ul>
+          <li><b>Siège social</b></li>
+          <li>1 ter rue Racine</li>
+          <li>34800 Nébian</li>
+        </ul>
+      </section>
 
       <!-- Mentions légales -->
-      <p>&#169; 2025 by Marina CASSAGNE</p>
+      <ul class="legalNotices">
+        <li>
+          Copyright &#169; 2025 Escalagou - Tous droits réservés - Mentions
+          légales
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

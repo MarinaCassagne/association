@@ -4,16 +4,23 @@
 }
 
 html {
-  background-image: url("/img/salleEscalagou.jpg");
-
+  /* background-image: url("/img/salleEscalagou.jpg"); */
+  font-family: "Segoe UI", sans-serif;
 }
 
 header {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: ;
+}
 
+#logoEscalagou {
+  width: 50%;
+  height: auto;
 }
 
 h1 {
+  font-family: ;
   margin: 25px;
 }
 
@@ -22,24 +29,23 @@ ul {
 }
 
 nav ul {
-  list-style: none;
-  display: flex;s
-  
+  display: flex;
+  justify-content: right;
 }
 
 nav ul li {
-  font-family: "Segoe UI", sans-serif;
-  background-color: rgb(34, 32, 30);
+  background-color: #212529;
   padding: 10px;
   border-radius: 15px;
+  max-width: 10%;
+  text-align: center;
   margin: 10px;
-  :hover
+  :hover ;
 }
 
-nav a {
-  color: white;
+a {
+  color: #f0f9ff;
   text-decoration: none;
-  
 }
 
 .slogan {
@@ -47,9 +53,8 @@ nav a {
   text-shadow: 0 0 0 blue;
 }
 
-
 body {
-    margin: 0 auto;
+  margin: 0 auto;
   padding: 15px;
 }
 
@@ -58,5 +63,21 @@ main {
 }
 
 footer {
-  margin: 50 0;
+  color: #f0f9ff;
+  background-color: #212529;
+  margin: 100px 0;
+}
+
+.socialNetwork {
+  display: flex;
+  justify-content: center;
+}
+
+.socialNetwork li {
+  margin: 15px;
+}
+
+.socialNetwork img {
+  vertical-align: middle;
+  margin: 5px;
 }
