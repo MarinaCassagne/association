@@ -8,7 +8,11 @@
   </head>
   <body>
     <header>
-      <img src="img/logoEscalagou.png" alt="logo Escalagou" width="30" />
+      <img
+        id="logoEscalagou"
+        src="img/logoEscalagou.png"
+        alt="logo Escalagou"
+      />
 
       <h1>Contactez-nous</h1>
 
@@ -26,13 +30,25 @@
         <p>
           <label for="firstname">Prénom :</label>
           <br />
-          <input id="firstname" name="firstname" type="text" required />
+          <input
+            id="firstname"
+            name="firstname"
+            type="text"
+            placeholder="Votre prénom"
+            required
+          />
         </p>
 
         <p>
           <label for="lastname">Nom :</label>
           <br />
-          <input id="lastname" name="lastname" type="text" required />
+          <input
+            id="lastname"
+            name="lastname"
+            type="text"
+            placeholder="Votre nom"
+            required
+          />
         </p>
 
         <p>
@@ -42,43 +58,42 @@
             id="phone"
             name="phone"
             type="tel"
-            placeholder="votre numéro de téléphone"
+            placeholder="Votre numéro de téléphone"
           />
         </p>
 
         <p>
           <label for="e-mail">E-mail :</label>
-          <br>
+          <br />
           <input
             id="e-mail"
             name="e-mail"
             type="email"
-            placeholder="votre e-mail"
+            placeholder="Votre e-mail"
           />
         </p>
 
         <p>
           <label for="object">Objet de votre message :</label>
-          <br>
-            <input
-              id="object"
-              name="object"
-              type="text"
-              placeholder="objet ou sujet de votre message"
-              required
-            />
-          </label>
+          <br />
+          <input
+            id="object"
+            name="object"
+            type="text"
+            placeholder="Objet de votre message"
+            required
+          />
         </p>
 
         <p>
           <label for="message">Message :</label>
-          <br>
+          <br />
           <textarea
             id="message"
             name="message"
             rows="5"
             cols="33"
-            placeholder="votre message"
+            placeholder="Votre message"
           ></textarea>
         </p>
 

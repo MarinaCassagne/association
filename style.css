@@ -9,21 +9,32 @@ html {
 
 header {
   margin-bottom: 50px;
-  display: flex;
-  max-width: ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "lo h1 h1 h1 na";
+  gap: 15px;
+  align-items: center;
 }
 
 #logoEscalagou {
-  width: 250px;
+  grid-area: lo;
+  width: 100%;
   height: auto;
 }
 
 h1 {
+  grid-area: h1;
   margin: 25px;
+  text-align: center;
 }
 
 ul {
   list-style: none;
+}
+
+nav {
+  grid-area: na;
 }
 
 nav ul {
@@ -80,14 +91,31 @@ footer {
 }
 
 /* Contact */
+
+label {
+  color: rgb(144, 17, 22);
+  margin-bottom: 5px;
+}
+
 input {
-  color: #f0f9ff;
+  width: auto;
+  padding: 10px;
+  margin-bottom: 15px;
   border-width: 1px;
   border-radius: 15px;
 }
 
 textarea {
-  color: #0f92e9;
+  padding: 10px;
   border-width: 1px;
   border-radius: 15px;
+}
+
+#envoyer {
+  color: #f0f9ff;
+  box-shadow: 0 5 0 black;
+  border-color: #f0f9ff;
+  border-width: 1px;
+  border-radius: 15px;
+  background-color: rgb(33, 37, 41);
 }
