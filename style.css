@@ -3,9 +3,18 @@
   padding: 0;
 }
 
-body {
-  margin: 0 auto;
-  padding: 15px;
+html {
+  background-image: url("/img/salleEscalagou.jpg");
+
+}
+
+header {
+  margin-bottom: 50px;
+
+}
+
+h1 {
+  margin: 25px;
 }
 
 ul {
@@ -14,8 +23,23 @@ ul {
 
 nav ul {
   list-style: none;
-  display: flex;
-  justify-content: space-around;
+  display: flex;s
+  
+}
+
+nav ul li {
+  font-family: "Segoe UI", sans-serif;
+  background-color: rgb(34, 32, 30);
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+  :hover
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  
 }
 
 .slogan {
@@ -23,11 +47,14 @@ nav ul {
   text-shadow: 0 0 0 blue;
 }
 
+
+body {
+    margin: 0 auto;
+  padding: 15px;
+}
+
 main {
   display: grid;
-  grid-template-columns: ;
-  grid-template-rows: ;
-  grid grid-template-areas: ;
 }
 
 footer {
