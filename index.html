@@ -9,12 +9,13 @@
 
   <body>
     <header>
-      <img src="img/logoEscalagou.png" alt="logo Escalagou" width="30%" />
       <img
-        src="img/salleEscalagou.jpg"
-        alt="salle d'escalade Escalagou"
-        width="100%"
+        id="logoEscalagou"
+        src="img/logoEscalagou.png"
+        alt="logo Escalagou"
       />
+
+      <h1>Club d'escalade Escalagou</h1>
 
       <nav>
         <ul>
@@ -24,16 +25,14 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
-      <!-- Page accueil : Présentation de l’association, image, slogan -->
-      <h1>Escalagou</h1>
-
-      <!-- Slogan -->
-      <h2>Toujours plus haut, toujours plus fort !</h2>
     </header>
 
     <main>
+      <!-- Slogan -->
+      <h2 class="slogan">Toujours plus haut, toujours plus fort !</h2>
+
       <h2>Présentation</h2>
+      <img src="img/salleEscalagou.jpg" alt="salle d'escalade Escalagou" />
       <p>
         Escalagou est un club d'escalade et d'activités de pleine nature du
         coeur d'Hérault, affilié à la FFME depuis 2014.
@@ -53,24 +52,46 @@
     </main>
     <footer>
       <!-- Réseaux sociaux -->
-      <h2>Retrouvez nous sur :</h2>
-      <ul>
+      <h2>Suivez-nous</h2>
+      <ul class="socialNetwork">
         <li>
-          <img src="icone/facebook.png" alt="icone Facebook" width="10%" /><a
+          <img src="icone/facebook.png" alt="icone Facebook" width="30" /><a
             href="https://www.facebook.com/https://www.facebook.com/escalagou/?locale=fr_FR"
             target="_blank"
             >Facebook</a
           >
         </li>
         <li>
-          <img src="icone/instagram.png" alt="icone Instagram" width="10%" /><a
+          <img src="icone/instagram.png" alt="icone Instagram" width="30" /><a
             href="https://instagram.com/https://www.instagram.com/escalagou/?hl=fr"
             >Instagram</a
           >
         </li>
       </ul>
+
+      <!-- Adresses -->
+      <section class="address">
+        <ul>
+          <li><b>Club d'escalade Escalagou</b></li>
+          <li>Cave coopérative de Nébian</li>
+          <li>Av. Marcellin Albert</li>
+          <li>34800 Nébian</li>
+        </ul>
+
+        <ul>
+          <li><b>Siège social</b></li>
+          <li>1 ter rue Racine</li>
+          <li>34800 Nébian</li>
+        </ul>
+      </section>
+
       <!-- Mentions légales -->
-      <p>&#169; 2025 by Marina CASSAGNE</p>
+      <ul class="legalNotices">
+        <li>
+          Copyright &#169; 2025 Escalagou - Tous droits réservés - Mentions
+          légales
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
